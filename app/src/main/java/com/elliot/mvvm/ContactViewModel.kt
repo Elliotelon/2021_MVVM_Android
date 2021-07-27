@@ -10,7 +10,7 @@ class ContactViewModel(application: Application) : AndroidViewModel(application)
     private val contacts = repository.getAll()
 
     fun getAll(): LiveData<List<Contact>> {
-        return this.contacts
+        return contacts
     }
 
     fun insert(contact: Contact) {
